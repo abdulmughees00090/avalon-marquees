@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Arena & Halls — Architectural Specs & Royal Dining | Avalon Banquet Arena</title>
+  <meta name="description" content="Explore Avalon Banquet Arena's twin luxury marquees on G.T. Road, Islamabad. 600+ guest capacity, 4,500+ sq. ft., dedicated bridal suites, 300+ car parking, and royal live catering.">
+  
+  <meta property="og:title" content="The Arena & Halls — Avalon Banquet Arena Islamabad">
+  <meta property="og:description" content="State-of-the-art climate-controlled marquees, 300+ car parking, and royal live buffet setup.">
+  <meta property="og:image" content="images/avalon-marquee-interior.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Avalon Banquet Arena Home">
+        <span class="title">AVALON</span>
+        <span class="subtitle">BANQUET ARENA</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">The Arena & Halls</a></li>
+          <li><a href="contact.html" class="nav-link">Reservations & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-eventos" data-eventos-drawer>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+          Check Availability
+        </button>
+        <a href="contact.html" class="btn btn-primary">Book Venue</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <button class="mobile-menu-close" aria-label="Close Menu">×</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">The Arena & Halls</a>
+    <a href="contact.html">Reservations & Contact</a>
+    <button class="btn btn-primary" data-eventos-drawer style="margin-top: 1.5rem;">Book via EventOS</button>
+  </div>
+
+  <!-- HERO SECTION WITH CINEMATIC VIDEO BACKGROUND -->
+  <section class="hero" id="aboutHero">
+    <div class="hero-video-wrapper">
+      <video class="hero-video" autoplay loop muted playsinline preload="auto" poster="images/avalon-marquee-interior.jpeg">
+        <source src="https://res.cloudinary.com/dgvwlj8xw/video/upload/v1777692671/about-hero_dt90wq.mp4" type="video/mp4">
+        Your browser does not support video background.
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span>🏛️</span> ARCHITECTURAL EXCELLENCE ON G.T. ROAD
+      </div>
+      <h1 class="hero-title">
+        Where Grandeur Meets <span class="gold-text">Celebration</span>
+      </h1>
+      <p class="hero-subtitle">
+        Explore Islamabad's most versatile banquet arena — engineered with column-free architectural vistas, acoustic brilliance, and lavish hospitality spaces.
+      </p>
+
+      <div class="hero-ctas">
+        <button class="btn btn-primary" data-eventos-drawer>
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+          Book via EventOS
+        </button>
+        <a href="#specs" class="btn btn-outline">Explore Architectural Specs</a>
+      </div>
+    </div>
+
+    <!-- Video Play/Pause accessibility button -->
+    <button class="video-control-btn" aria-label="Pause Background Video" title="Pause Background Video">
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+    </button>
+  </section>
+
+  <!-- ARCHITECTURAL SPECS & CAPACITY STATS -->
+  <section class="section-padding" id="specs">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <span class="gold-subhead">ENGINEERED FOR GRAND EVENTS</span>
+        <h2 class="section-heading">Venue Architectural Specifications</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Designed to exceed international hospitality standards, Avalon Banquet Arena delivers seamless logistics for gatherings of any size.
+        </p>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-box">
+          <div class="spec-number">600+</div>
+          <div class="spec-label">Guest Capacity (Combined Halls)</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-number">4,500+</div>
+          <div class="spec-label">Sq. Ft. Per Marquee Arena</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-number">300+</div>
+          <div class="spec-label">Dedicated Secure Car Parking</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-number">100%</div>
+          <div class="spec-label">HVAC Climate Control & Backup Power</div>
+        </div>
+      </div>
+
+      <!-- Detail Card Layout -->
+      <div class="grid-2" style="margin-top: 4rem;">
+        <div class="editorial-card">
+          <span class="gold-subhead">HALL 1 & HALL 2 FLEXIBILITY</span>
+          <h3 class="font-serif" style="font-size: 2.2rem; color: #ffffff; margin-bottom: 1rem;">Twin Grand Marquees</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+            Whether configured as one grand unified ballroom for 600+ guests or divided into Hall 1 and Hall 2 for separate Barat and Walima functions, our venue provides custom sound-proof acoustic partitions and dual independent entrances.
+          </p>
+          <ul class="card-features-list">
+            <li>Zero column line-of-sight obstruction for all guests</li>
+            <li>Dedicated VIP red carpet entrance pathways</li>
+            <li>Private bridal lounge equipped with full vanity mirrors & ensuite bath</li>
+          </ul>
+        </div>
+
+        <div class="editorial-card">
+          <span class="gold-subhead">PARKING & VALET LOGISTICS</span>
+          <h3 class="font-serif" style="font-size: 2.2rem; color: #ffffff; margin-bottom: 1rem;">300+ Car Parking & G.T. Road Access</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+            Located right off main G.T. Road near Builders Mall, Avalon eliminates city traffic bottlenecks with an expansive paved private parking lot guarded 24/7 by trained security personnel and CCTV surveillance.
+          </p>
+          <ul class="card-features-list">
+            <li>Professional uniformed valet attendant staff</li>
+            <li>Wheelchair-accessible ramps and wide entrance corridors</li>
+            <li>Heavy-duty 500kVA backup generator infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING & ROYAL DINING EXPERIENCE -->
+  <section class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);" id="catering">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <span class="gold-subhead">GASTRONOMIC MASTERY</span>
+        <h2 class="section-heading">Royal Buffets & Live Catering</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Our master executive chefs craft authentic Pakistani, Mughal, and Continental banquets using strictly fresh premium ingredients and live tandoori cooking stations.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Menu 1: Royal One-Dish -->
+        <div class="feature-card">
+          <div class="card-img">
+            <img src="images/avalon-dining-buffet.jpeg" alt="Royal One-Dish Buffet setup" loading="lazy">
+            <span class="card-tag">Govt Approved Standard</span>
+          </div>
+          <div class="card-body">
+            <h3>Royal One-Dish Package</h3>
+            <p>Traditional single-dish menu compliant with regional venue guidelines without sacrificing regal taste.</p>
+            <ul class="card-features-list">
+              <li>Royal Mutton Qorma or Mutton Biryani</li>
+              <li>Fresh Live Roghani & Sesame Naan</li>
+              <li>Signature Shahi Firni or Kheer</li>
+              <li>Fresh Green Salad & Mint Raita</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu 2: Live Barbecue & Counter Stations -->
+        <div class="feature-card">
+          <div class="card-img">
+            <img src="images/avalon-lighting-ambiance.jpeg" alt="Live Cooking Station" loading="lazy">
+            <span class="card-tag">Live Tandoor & Grill</span>
+          </div>
+          <div class="card-body">
+            <h3>Live Counter Stations</h3>
+            <p>Interactive live cooking stations serving piping hot delicacies directly from the charcoal grill to your guests' plates.</p>
+            <ul class="card-features-list">
+              <li>Seekh Kebab & Chicken Malai Boti</li>
+              <li>Live Tandoori Naan & Kulcha Counter</li>
+              <li>Live Gol Gappa & Dahi Bhalla Counter</li>
+              <li>Traditional Charcoal Fish Grill</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu 3: Royal Desserts & Drinks -->
+        <div class="feature-card">
+          <div class="card-img">
+            <img src="images/avalon-walima-stage.jpeg" alt="Royal Desserts setup" loading="lazy">
+            <span class="card-tag">Sweet Indulgence</span>
+          </div>
+          <div class="card-body">
+            <h3>Grand Dessert Presentation</h3>
+            <p>A lavish dessert bar featuring hot traditional sweets, cold delicacies, and fresh brewed green tea or Kashmiri chai.</p>
+            <ul class="card-features-list">
+              <li>Warm Shahi Gulab Jamun & Jalebi</li>
+              <li>Kashmiri Pink Tea with Pistachio Craze</li>
+              <li>Gajar Halwa / Daal Halwa (Seasonal)</li>
+              <li>Artisanal Gourmet Ice Cream Parlor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASONRY CURATED GALLERY -->
+  <section class="section-padding" id="gallery">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <span class="gold-subhead">AUTHENTIC VENUE GALLERY</span>
+        <h2 class="section-heading">Explore Avalon's Ambiance</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Browse actual photographs of our grand marquees, stage setups, dining halls, and exterior facade.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-caption="Grand Main Arena Hall with Crystal Chandeliers">
+          <img src="images/avalon-hall-grand.jpeg" alt="Grand Arena Hall" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Grand Main Hall</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Royal Wedding Stage Floral Backdrop">
+          <img src="images/avalon-stage-royal.jpeg" alt="Royal Wedding Stage" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Royal Wedding Stage</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Royal Dining Buffet Counter Layout">
+          <img src="images/avalon-dining-buffet.jpeg" alt="Royal Buffet Layout" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Royal Dining Setup</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Panoramic Interior View of Marquee 1">
+          <img src="images/avalon-marquee-interior.jpeg" alt="Marquee Interior" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Marquee Interior Vistas</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Illuminated Night Entrance on G.T. Road">
+          <img src="images/avalon-exterior-night.jpeg" alt="Exterior Night View" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Night Exterior Facade</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Barat Red Carpet Arrival Corridor">
+          <img src="images/avalon-barat-reception.jpeg" alt="Barat Arrival" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Barat Arrival Walkway</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Walima Stage Decor in Subtle Pastel Accents">
+          <img src="images/avalon-walima-stage.jpeg" alt="Walima Stage" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Walima Pastel Setup</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Vibrant Traditional Mehndi Drapes and Lounge">
+          <img src="images/avalon-mehndi-decor.jpeg" alt="Mehndi Decor" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Festive Mehndi Setup</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Corporate Gala Conference Hall Layout">
+          <img src="images/avalon-corporate-hall.jpeg" alt="Corporate Gala Hall" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Corporate Conference Hall</h4>
+            <p>Click to Zoom</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS INTEGRATION CALLOUT -->
+  <section class="container" style="margin-bottom: 6rem;">
+    <div class="eventos-banner">
+      <div class="eventos-badge-header">
+        ⚡ Powered by EventOS Software
+      </div>
+      <h2 class="eventos-title font-serif">Plan Your Event Floorplan & Menu via EventOS</h2>
+      <p class="eventos-desc">
+        Our digital booking portal powered by <strong>EventOS — Event Management Software for Marriage Halls, Marquees & Banquet Venues in Pakistan</strong> lets you customize guest seating, choose menu packages, and check venue availability seamlessly.
+      </p>
+      <button class="btn btn-eventos" data-eventos-drawer>
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+        Check Availability via EventOS
+      </button>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" id="lightboxImg" alt="Enlarged view">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- EVENTOS QUICK INQUIRY DRAWER -->
+  <div class="drawer-backdrop" id="eventosDrawer">
+    <div class="drawer-panel">
+      <button class="drawer-close" aria-label="Close Drawer">&times;</button>
+      
+      <div class="eventos-badge-header" style="margin-bottom: 0.8rem;">
+        ⚡ Powered by EventOS Engine
+      </div>
+      <h3 class="font-serif" style="font-size: 2rem; color: #ffffff; margin-bottom: 0.5rem;">Check Venue Availability</h3>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 2rem;">
+        Directly query Avalon Banquet Arena booking calendar managed via EventOS Software.
+      </p>
+
+      <form id="eventosInquiryForm">
+        <div class="form-group">
+          <label class="form-label" for="drawerName">Full Name *</label>
+          <input type="text" id="drawerName" class="form-control" placeholder="e.g. Ch. Muhammad Ali" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="drawerPhone">Contact Number (WhatsApp) *</label>
+          <input type="tel" id="drawerPhone" class="form-control" placeholder="+92 300 1234567" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="drawerEventType">Event Type *</label>
+          <select id="drawerEventType" class="form-control" required>
+            <option value="">Select Event Type</option>
+            <option value="Barat">Barat Reception</option>
+            <option value="Walima">Walima Reception</option>
+            <option value="Mehndi">Mehndi / Sangeet</option>
+            <option value="Corporate">Corporate Gala / Conference</option>
+            <option value="Private">Private Family Function</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="drawerDate">Target Event Date *</label>
+          <input type="date" id="drawerDate" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="drawerGuests">Estimated Guest Count *</label>
+          <select id="drawerGuests" class="form-control" required>
+            <option value="150-250">150 – 250 Guests</option>
+            <option value="250-400">250 – 400 Guests</option>
+            <option value="400-600+">400 – 600+ Guests</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          Submit EventOS Inquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING WIDGETS -->
+  <div class="floating-widgets">
+    <button class="eventos-float" data-eventos-drawer title="Book Venue on EventOS">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+      Book on EventOS
+    </button>
+    <a href="https://wa.me/923235372222?text=Hello%20Avalon%20Banquet%20Arena%2C%20I%20would%20like%20to%20inquire%20about%20booking%20availability." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Direct WhatsApp Inquiry">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>AVALON</h3>
+          <span class="gold-subhead">BANQUET ARENA</span>
+          <p>
+            Islamabad's premier luxury event venue offering climate-controlled marquees, regal stage decor, and custom royal buffets on main G.T. Road.
+          </p>
+          <div class="eventos-footer-badge">
+            <svg width="14" height="14" fill="#38bdf8" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-5M2 12l10 5 10-5"/></svg>
+            Powered by <strong>EventOS Venue Booking Platform</strong>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">The Arena & Halls</a></li>
+            <li><a href="contact.html">Reservations & Contact</a></li>
+            <li><a href="#" data-eventos-drawer>EventOS Availability</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Events Hosted</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Royal Barat Receptions</a></li>
+            <li><a href="about.html">Elegant Walima Banquets</a></li>
+            <li><a href="about.html">Festive Mehndi & Sangeet</a></li>
+            <li><a href="about.html">Corporate Galas & Summits</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Location</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">
+            Near Builders Mall, G.T. Road, Islamabad, Pakistan
+          </p>
+          <p style="color: var(--accent-gold-light); font-size: 0.95rem; margin-bottom: 0.5rem;">
+            📞 +92 323 5372222 / +92 322 5003477
+          </p>
+          <p style="color: var(--text-dim); font-size: 0.85rem;">
+            🕒 Visiting Hours: Daily 11:00 AM – 8:00 PM
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Avalon Banquet Arena Islamabad. All Rights Reserved.</div>
+        <div>Designed with Haute Hospitality Elegance • Integrated with EventOS</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
