@@ -100,57 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. EVENTOS INQUIRY DRAWER
-  const drawerBackdrop = document.getElementById('eventosDrawer');
-  const drawerTriggers = document.querySelectorAll('[data-eventos-drawer]');
-  const drawerClose = document.querySelector('.drawer-close');
-
-  drawerTriggers.forEach(trigger => {
-    trigger.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (drawerBackdrop) {
-        drawerBackdrop.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
-
-  if (drawerClose && drawerBackdrop) {
-    drawerClose.addEventListener('click', () => {
-      drawerBackdrop.classList.remove('active');
-      document.body.style.overflow = '';
-    });
-
-    drawerBackdrop.addEventListener('click', (e) => {
-      if (e.target === drawerBackdrop) {
-        drawerBackdrop.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    });
-  }
-
-  // 6. EVENTOS INQUIRY FORM & DIRECT BOOKING FORM HANDLING
-  const eventosForm = document.getElementById('eventosInquiryForm');
-  if (eventosForm) {
-    eventosForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const submitBtn = eventosForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-
-      submitBtn.innerHTML = 'Connecting to EventOS...';
-      submitBtn.disabled = true;
-
-      setTimeout(() => {
-        alert('Thank you! Your availability inquiry has been dispatched to EventOS. A venue reservations manager will contact you within 30 minutes.');
-        eventosForm.reset();
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        if (drawerBackdrop) drawerBackdrop.classList.remove('active');
-        document.body.style.overflow = '';
-      }, 1200);
-    });
-  }
-
+  // 5. DIRECT BOOKING FORM HANDLING
   const directForm = document.getElementById('directBookingForm');
   if (directForm) {
     directForm.addEventListener('submit', (e) => {
