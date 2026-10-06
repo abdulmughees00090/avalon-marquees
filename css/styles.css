@@ -1327,19 +1327,43 @@ textarea.form-control {
     padding: 0 1rem !important;
   }
 
-  /* 6. Mobile Nav Drawer & Tap Targets */
-  .nav-links, .nav-actions .btn-outline {
+  /* 6. Mobile Nav Drawer & Header Layout */
+  header .nav-actions .btn,
+  header .nav-actions a.btn,
+  header .nav-cta,
+  header .header-buttons,
+  header .btn-header-cta {
     display: none !important;
   }
 
-  .mobile-toggle {
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+  }
+
+  .mobile-toggle,
+  .mobile-menu-toggle,
+  .hamburger-btn,
+  #menu-btn {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    min-width: 44px !important;
-    min-height: 44px !important;
-    padding: 0.5rem !important;
-    font-size: 1.75rem !important;
+    z-index: 60;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.75rem;
   }
 
   .mobile-menu-overlay {
@@ -1378,6 +1402,17 @@ textarea.form-control {
     padding: 0.5rem 1rem !important;
     width: 100% !important;
     text-align: center !important;
+  }
+
+  .mobile-menu-overlay .btn {
+    display: flex !important;
+    width: 85% !important;
+    max-width: 280px !important;
+    margin-top: 1rem !important;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.85rem !important;
+    text-align: center !important;
+    justify-content: center !important;
   }
 
   .mobile-menu-close {
@@ -1422,6 +1457,15 @@ textarea.form-control {
     height: 44px !important;
     min-width: 44px !important;
     min-height: 44px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-toggle,
+  .mobile-menu-toggle,
+  .hamburger-btn,
+  #menu-btn {
+    display: none !important;
   }
 }
 
