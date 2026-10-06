@@ -1,6 +1,6 @@
 /* ==========================================================================
-   AVALON BANQUET ARENA — MONOCHROME ARCHITECTURAL LUXURY STYLESHEET
-   Identity: Crisp White, Polished Chrome, Pure Silver & Obsidian Charcoal
+   AVALON BANQUET ARENA — MONOCHROME ARCHITECTURAL & DEEP EMERALD STYLESHEET
+   Identity: Obsidian Black, Pure Silver, Metallic Chrome & EventOS Deep Emerald
    Target: GitHub Pages (Static HTML5, Modern CSS3, Vanilla JS)
    ========================================================================== */
 
@@ -20,10 +20,17 @@
   --accent-silver-bright: #ffffff;
   --accent-silver-dark: #94a3b8;
   --accent-chrome: #cbd5e1;
-  --accent-silver-glow: rgba(255, 255, 255, 0.12);
   --border-silver: rgba(226, 232, 240, 0.18);
   --border-silver-strong: rgba(226, 232, 240, 0.45);
   
+  /* EventOS Deep Emerald Green Accent Palette */
+  --emerald-primary: #047857;
+  --emerald-deep: #065f46;
+  --emerald-hover: #059669;
+  --emerald-bright: #34d399;
+  --emerald-glow: rgba(4, 120, 87, 0.25);
+  --emerald-border: rgba(16, 185, 129, 0.35);
+
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
@@ -45,6 +52,7 @@
   --transition-normal: 0.4s var(--ease-out);
   --shadow-silver: 0 10px 30px -10px rgba(255, 255, 255, 0.1);
   --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.6);
+  --shadow-emerald: 0 10px 25px rgba(4, 120, 87, 0.4);
 }
 
 /* --- BASE & RESET --- */
@@ -89,7 +97,7 @@ button, input, select, textarea {
   font-size: inherit;
 }
 
-/* --- TYPOGRAPHY UTILITIES --- */
+/* --- TYPOGRAPHY & LUXURIOUS SHIMMER UTILITIES --- */
 h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: var(--font-heading);
   font-weight: 600;
@@ -103,6 +111,31 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+/* Metallic Polish & Animated Silver Shimmer for Headlines */
+.text-shimmer {
+  background: linear-gradient(
+    120deg,
+    #ffffff 0%,
+    #f1f5f9 20%,
+    #94a3b8 40%,
+    #ffffff 60%,
+    #cbd5e1 80%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: silverShine 6s linear infinite;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  display: inline-block;
+}
+
+@keyframes silverShine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .silver-subhead {
@@ -195,18 +228,19 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   transform: translateY(-2px);
 }
 
+/* EVENTOS DEEP EMERALD GREEN BUTTON */
 .btn-eventos {
-  background: rgba(14, 165, 233, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  color: #38bdf8;
+  background: rgba(4, 120, 87, 0.18);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: var(--emerald-bright);
   font-weight: 600;
 }
 
 .btn-eventos:hover {
-  background: rgba(14, 165, 233, 0.25);
-  border-color: #38bdf8;
+  background: var(--emerald-deep);
+  border-color: var(--emerald-hover);
   color: #ffffff;
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.35);
   transform: translateY(-2px);
 }
 
@@ -797,24 +831,25 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   color: var(--accent-silver);
 }
 
-/* --- EVENTOS INTEGRATION BANNER & BADGES --- */
+/* --- EVENTOS INTEGRATION BANNER & BADGES (DEEP EMERALD ACCENTS) --- */
 .eventos-banner {
-  background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(15, 23, 42, 0.85) 100%);
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: linear-gradient(135deg, rgba(4, 120, 87, 0.14) 0%, rgba(6, 95, 70, 0.85) 100%);
+  border: 1px solid var(--emerald-border);
   border-radius: var(--radius-lg);
   padding: 3.5rem;
   margin-top: 4rem;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-card), 0 0 40px rgba(4, 120, 87, 0.2);
 }
 
 .eventos-badge-header {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: rgba(14, 165, 233, 0.15);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  color: #38bdf8;
+  background: rgba(4, 120, 87, 0.22);
+  border: 1px solid var(--emerald-border);
+  color: var(--emerald-bright);
   padding: 0.35rem 1rem;
   border-radius: 50px;
   font-size: 0.78rem;
@@ -832,7 +867,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .eventos-desc {
-  color: #94a3b8;
+  color: #cbd5e1;
   font-size: 1.05rem;
   max-width: 720px;
   margin-bottom: 2rem;
@@ -852,7 +887,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .eventos-footer-badge a {
-  color: #38bdf8;
+  color: var(--emerald-bright);
   transition: color 0.2s ease;
   font-weight: 600;
 }
@@ -955,7 +990,7 @@ textarea.form-control {
   border: none;
 }
 
-/* --- FLOATING WIDGETS --- */
+/* --- FLOATING WIDGETS (EVENTOS DEEP EMERALD) --- */
 .floating-widgets {
   position: fixed;
   bottom: 30px;
@@ -996,7 +1031,7 @@ textarea.form-control {
 }
 
 .eventos-float {
-  background: #0ea5e9;
+  background: var(--emerald-deep);
   color: #ffffff;
   padding: 0.75rem 1.2rem;
   border-radius: 50px;
@@ -1004,8 +1039,8 @@ textarea.form-control {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
-  border: none;
+  box-shadow: var(--shadow-emerald);
+  border: 1px solid var(--emerald-border);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1015,8 +1050,9 @@ textarea.form-control {
 
 .eventos-float:hover {
   transform: translateY(-3px);
-  background: #0284c7;
+  background: var(--emerald-primary);
   color: #ffffff;
+  box-shadow: 0 12px 30px rgba(4, 120, 87, 0.5);
 }
 
 @keyframes pulse-ring {
